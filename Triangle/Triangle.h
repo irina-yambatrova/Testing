@@ -2,7 +2,7 @@
 class CTriangle
 {
 public:
-	CTriangle(float a, float b, float  c);
+	CTriangle(double a, double b, double  c);
 
 	bool CheckTriangle()const;
 	bool CheckEquilateralTriangle()const;

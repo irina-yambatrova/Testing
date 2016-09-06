@@ -17,7 +17,7 @@ triangle.exe 6 6 6 > equilateralTriangle.txt
 IF ERRORLEVEL 1 GOTO testFailed
 fc /b equilateralTriangle.txt standart/EquilateralTriangle.txt
 IF ERRORLEVEL 1 GOTO testFailed
-
+ 
 echo Test not Triangle
 triangle.exe 1 1 2 > notTriangle.txt
 IF ERRORLEVEL 1 GOTO testFailed

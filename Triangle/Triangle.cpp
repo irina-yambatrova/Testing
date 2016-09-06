@@ -6,7 +6,7 @@
 using namespace std;
 
 
-CTriangle::CTriangle(float a , float b, float c)
+CTriangle::CTriangle(double a , double b, double c)
 	: a(a)
 	, b(b)
 	, c(c)
