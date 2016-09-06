@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include <istream>
 #include <iostream>
+#include <string>
+#include <sstream>
 #include "Triangle.h"
 
 
