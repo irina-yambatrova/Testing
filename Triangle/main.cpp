@@ -2,8 +2,7 @@
 #include <istream>
 #include <iostream>
 #include "Triangle.h"
-#include <algorithm>
-#include <boost/algorithm/string.hpp>
+
 
 using namespace std;
 
