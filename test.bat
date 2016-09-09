@@ -36,7 +36,6 @@ IF ERRORLEVEL 1 GOTO testFailed
 fc /b aZero.txt standart/NotTriangle.txt
 IF ERRORLEVEL 1 GOTO testFailed
 
-
 echo test side b is negative
 triangle.exe 1 -1 2 > bNegative.txt
 IF ERRORLEVEL 1 GOTO testFailed

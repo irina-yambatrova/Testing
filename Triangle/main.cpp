@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-
+#include <boost/algorithm/string.hpp>
 #include "Triangle.h"
 
 
@@ -15,8 +15,11 @@ bool checkNumber(char * number)
 	str << number;
 	string stringWithNumber;
 	str >> stringWithNumber;
+	boost::replace_all(stringWithNumber, ".", ",");
+	//stringWithNumber.replace(stringWithNumber.begin(), stringWithNumber.end(), '.', ',');
 	for (int i = 0; i < stringWithNumber.length(); i++)
 	{
+		
 		if ((((int)stringWithNumber[i] > 47) && ((int)stringWithNumber[i] < 58)) || ((int(stringWithNumber[i]) == 45)))
 		{
 			return true;
@@ -35,6 +38,7 @@ double side(char * number)
 	str << number;
 	string stringWithNumber;
 	str >> stringWithNumber;
+	boost::replace_all(stringWithNumber, ".", ",");
 	return atof(stringWithNumber.c_str());
 }
 
